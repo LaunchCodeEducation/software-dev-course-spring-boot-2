@@ -16,12 +16,6 @@ public class BookController {
         add(new Book("1984", "George Orwell", 1949, 328));
     }};
 
-
-    @Override
-    public String toString() {
-        return name + " by " + author;
-    }
-
     @GetMapping("/json")
     public List<Book> getBooksJson() {
         return books;
